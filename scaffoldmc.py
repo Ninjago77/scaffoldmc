@@ -9,9 +9,11 @@ with urlopen(httprequest) as response:
     if not response.status == 200:
         raise ConnectionRefusedError("Response Status is not '200' (OK), it is "+response.status)
     with open(__file__,"r+") as file:
+        line1 = file.readline()
+        line2 = file.readline()
+    with open(__file__,"w+") as file:
         file.write(
-            file.readline() + "\n" +
-            file.readline() + "\n" +
+            line1 + line2 + "\n" +
             response.read().decode().split("\n",2)[2]            
         )
         
