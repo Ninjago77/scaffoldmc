@@ -1,4 +1,5 @@
 {
     "platform": "purpur",
-    "version": "latest"
+    "version": "latest",
+    "self-update": true
 }
