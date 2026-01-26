@@ -1,5 +1,11 @@
 {
-    "platform": "purpur",
+    "platform": "fabric",
     "version": "latest",
-    "self-update": true
+    "self-update": true,
+    "directory": "./mc",
+    "update-server": true,
+    "update-projects": true,
+    "projects": [
+
+    ]
 }
